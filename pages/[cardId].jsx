@@ -138,8 +138,8 @@ const Card = ({ cardData }) => {
         <meta
           property="og:image"
           content={
-            cardData?.coverPhoto && cardData?.coverPhoto.url !== ""
-              ? cardData?.coverPhoto.url
+            cardData?.profilePhoto && cardData?.profilePhoto.url !== ""
+              ? cardData?.profilePhoto.url
               : marca
           }
         />
