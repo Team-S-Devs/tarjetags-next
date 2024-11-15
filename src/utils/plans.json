@@ -1,0 +1,94 @@
+[
+    {
+        "idPlan": 1,
+        "namePlan":"Gratis",
+        "pricePlan": 0,
+        "currency": "Bs",
+        "renovacion": "Solo 3 meses",
+        "servicioTiendaMax":10,
+        "botonesAdicionales": ["Ilimitado sin Whatsapp y Maps"],
+        "clasificacionDeProductos":  false,
+        "descripcion": [
+            "Caducidad en 3 meses",
+            "Tienda de hasta 10 productos",
+            "Todos los botones menos WhatsApp y Maps"
+        ]
+    },
+    {
+        "idPlan": 2,
+        "namePlan":"Estándar",
+        "pricePlan": 150,
+        "currency": "Bs",
+        "renovacion": "Anual",
+        "servicioTiendaMax":100,
+        "botonesAdicionales": ["Ilimitado"],
+        "clasificacionDeProductos":  false,
+        "descripcion": [
+            "Renovación Anual",
+            "Tienda de hasta 100 productos",
+            "Todos los botones"
+         ]
+    },
+    {
+        "idPlan": 3,
+        "namePlan":"Premium",
+        "pricePlan": 250,
+        "currency": "Bs",
+        "renovacion": "Anual",
+        "servicioTiendaMax":250,
+        "botonesAdicionales": ["Ilimitado"],
+        "clasificacionDeProductos":  true,
+        "descripcion": [
+            "Renovación anual",
+            "Tienda de hasta 250 productos",
+            "Todos los botones",
+            "Clasificación de productos",
+            "Administrador: Vincular otras cuentas"
+         ]
+    },
+    {
+        "idPlan": 4,
+        "namePlan":"Bronce",
+        "pricePlan": 500,
+        "currency": "Bs",
+        "renovacion": "Anual",
+        "servicioTiendaMax": 0,
+        "botonesAdicionales": ["Ilimitado"],                
+        "descripcion": [
+            "Comision de venta 10%",
+            "Suscriptores descuentos 0%",
+            "Costo de pase 5.00 Bs",
+            "Minimo pases 100"
+         ]
+    },
+    {
+        "idPlan": 5,
+        "namePlan":"Plata",
+        "pricePlan": 2250,
+        "currency": "Bs",
+        "renovacion": "Anual",
+        "servicioTiendaMax":250,
+        "botonesAdicionales": ["Ilimitado"],
+        "descripcion": [
+            "Comision de venta 20%",
+            "Suscriptores descuentos 10%",
+            "Costo de pase 15.00 Bs",
+            "Minimo pases 150"
+         ]
+    },
+    {
+        "idPlan": 6,
+        "namePlan":"Oro",
+        "pricePlan": 7500,
+        "currency": "Bs",
+        "renovacion": "Anual",
+        "servicioTiendaMax":250,
+        "botonesAdicionales": ["Ilimitado"],
+        "descripcion": [
+            "Comision de venta 35%",
+            "Suscriptores descuentos 15%",
+            "Costo de pase 30.00 Bs",
+            "Minimo pases 250"
+         ]
+    }
+]

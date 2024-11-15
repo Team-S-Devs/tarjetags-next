@@ -1,0 +1,5 @@
+.fab-container {
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2); /* You can adjust the values as needed */
+    border-radius: 50%;
+    margin-right: 28px;
+}

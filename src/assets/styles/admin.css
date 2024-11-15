@@ -1,0 +1,167 @@
+.adminTable table {
+    text-align: center;
+    vertical-align:middle;
+    font-size: .96rem;
+}
+
+.adminTable table th {
+    text-align: center;
+    padding-right: 1rem;
+    vertical-align:middle;
+}
+
+.adminTable table td {
+    text-align:start;
+    padding-right: 1rem;
+    cursor:default;
+    vertical-align:middle;
+}
+
+.adminTable {
+    background-color: red;
+    border-radius: 15px;
+    padding: 1rem;
+    padding-top: 0;
+    margin-top: 1rem;
+    margin-top: 1rem;
+}
+
+.optionsAdmin {
+    display: flex;
+}
+
+.optionsAdmin div {
+    margin-inline: .2rem;
+    border-radius: 7px;
+    font-size: 1.05rem;
+    color: white;
+    padding-inline: .4rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    transition: transform 50ms ease-in;
+    cursor: pointer;
+}
+.optionsAdmin div:hover {
+    transform: scale(1.06)
+}
+
+.optionsAdmin div:nth-child(1) {
+    background-color:var(--prim-purple);
+    display: flex;
+    align-items: center;
+}
+
+.optionsAdmin span {
+    margin-left: .4rem;
+}
+
+/* .optionsAdmin button {
+    display: flex;
+    align-items: center;
+}
+
+.optionsAdmin button {
+    
+} */
+
+.optionsAdmin div:nth-child(2) {
+    background-color:rgb(175, 26, 26);
+}
+
+.paginationOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    margin-bottom: 1rem;
+}
+
+.paginationOptions button {
+    margin-inline: .2rem;
+    padding: .1rem;
+    padding-inline: .4rem;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    cursor:pointer;
+
+}
+
+.paginationOptions button:hover {
+    transform: scale(1.08);
+}
+
+.personal-info-style{
+    vertical-align:middle;
+    max-width: max-content;
+    margin-top: 1rem;
+}
+
+.personal-info-style table tbody td {
+    padding: .4rem;
+}
+
+.personal-info-style table tr td:nth-child(1) {
+    font-weight: 600;
+}
+
+.search-style {
+    display: flex;
+    justify-content: right;
+}
+
+.not-found-style {
+    display:block;
+    text-align: center;
+    background-color:aliceblue;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.not-found-style h4 {
+    font-size: 1.4rem;
+    font-weight: 550;
+    padding: 0.2rem;
+    padding-inline: 0.4rem;
+    border-radius: 10px;
+}
+
+.container-not-found {
+    padding: 1.5rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    margin-top: 0.5rem;
+}
+
+.history-pay-button {
+    border-radius: 10px;
+    color: var(--prim-purple);
+    font-weight: 500;
+    border: 1px solid var(--prim-purple);
+
+}
+
+.history-pay-button:hover {
+    border: 1px solid #571ad99b;
+}
+
+.info-container{
+    background: red;
+}
+
+@media (max-width: 400px) {
+    .search-container {
+        font-size: 0.3rem;
+    }    
+
+    .personal-info-style {
+        font-size: 0.87rem;
+    }
+}

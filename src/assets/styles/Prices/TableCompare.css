@@ -1,0 +1,301 @@
+@import url("../global.css");
+
+.TableCompare-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 66px;
+  padding-bottom: 66px;
+  height: auto;
+  background: linear-gradient(90deg, #662483 0%, #561ad9 100%);
+}
+.tittle-text-table {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: var(--font-family-title);
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.tittle-benefits {
+  font-family: var(--font-family-general);
+  font-size: 31.25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.table-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  flex-direction: row;
+  margin: 0;
+  gap: 10px;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0px;
+  margin: 0;
+  width: 100%;
+}
+
+.box-content-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 100px;
+  width: 100%;
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 5px;
+  position: relative;
+  margin: 0;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: auto;
+  min-height: 100px;
+  width: 100%;
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 5px;
+  position: relative;
+  margin: 0;
+}
+
+.box-benefit {
+  min-width: 400px;
+}
+
+.text-benefit {
+  width: 400px;
+  align-items: flex-start;
+}
+
+.text-container-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 57.843px;
+}
+
+.text-price-table {
+  font-family: var(--font-family-titlex);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.divisor-line {
+  top: 0px;
+  position: absolute;
+  width: 85%;
+  height: 1px;
+  background: var(--Black-light-letter, #8c8c8c);
+}
+
+.text-description {
+  color: #555;
+  padding-left: 5px;
+}
+
+.divisor-line-vertical {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: var(--Black-light-letter, #8c8c8c);
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+.icon-check {
+  color: #9dd91a;
+  width: 25px;
+  height: 25px;
+}
+
+.icon-check-negative {
+  color: #fe2c55;
+  width: 25px;
+  height: 25px;
+}
+
+.row-boxes-benefits {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+
+.column-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  width: 100%;
+  height: 40px;
+}
+
+.box-content h4 {
+  text-align: center;
+}
+
+.text-benefit h4 {
+  text-align: left;
+}
+
+@media screen and (max-width: 1500px) {
+  .text-benefit {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1328px) {
+  .text-benefit {
+    width: 300px;
+  }
+
+  .text-price-table {
+    font-size: 23px;
+  }
+
+  .box-content-top {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .text-benefit {
+    width: 220px;
+  }
+  .box-content-top {
+    min-width: 90px;
+  }
+
+  .box-content {
+    min-width: 90px;
+  }
+
+  .currency-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .text-benefit {
+    width: 190px;
+  }
+  .table-container {
+    gap: 5px;
+  }
+}
+/* TODO: Valor origin 958, revisar */
+@media screen and (max-width: 767px) {
+  .box-content-top {
+    display: none;
+  }
+
+  .text-description {
+    padding-left: 5px;
+  }
+
+  .column-benefit {
+    display: block;
+  }
+
+  .text-benefit {
+    width: 100%;
+  }
+
+  .table-container {
+    gap: 0px;
+  }
+
+  .divisor-line {
+    width: 100%;
+  }
+
+  .divisior-line-column-price {
+    display: relative;
+    right: 10px;
+  }
+
+  .divisor-line-vertical {
+    display: block;
+  }
+
+  .text-benefit h4 {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 904px) {
+  .TableCompare-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .TableCompare-container {
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .table-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-benefit h4 {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+
+  .box-content {
+    height: 130px;
+  }
+}

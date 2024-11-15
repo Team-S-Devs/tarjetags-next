@@ -1,0 +1,94 @@
+@media (max-width: 768px) {
+    .fixed-container-sign-up{
+        padding-right: 0 !important;
+    }
+}
+
+.profile-container {
+    background-color: var(--back-light);
+    min-height: 100vh;
+}
+
+.cont-profile1 {
+    padding-top: 1rem;
+}
+
+.profile-cont-2 {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-cont-2 form {
+    width: 90%;
+}
+
+.signOut {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.profile-background {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prof-2-cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-profile1:nth-last-child(1)  {
+    padding-top: 5rem;
+}
+
+@media (max-width: 470px) {
+    .cont-profile1 {
+        padding-top: 2.5rem;
+    }
+
+    .cont-profile1:nth-last-child(1)  {
+        padding-top: 3rem;
+    }
+
+    .signOut {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.buttons-container{
+    padding: 0 50px;
+}
+
+@media (max-width: 992px) {
+    .buttons-container{
+        padding: 0 20px;
+    }
+}
+
+.main-buttons-container{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .main-buttons-container{
+        flex-direction: column;
+    }
+    
+    .sign-out-button{
+        margin-top: 16px;
+    }
+}

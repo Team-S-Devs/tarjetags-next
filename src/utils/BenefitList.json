@@ -1,0 +1,26 @@
+{
+    "benefits": [
+      {
+        "name": "Renovación",
+        "description": ""
+      },
+      {
+        "name": "Tienda",
+        "description": "Añade tus productos y/o servicios."
+      },
+      {
+        "name": "Botones",
+        "description": "Vincula tus redes sociales a tu tarjeta."
+      },
+      {
+        "name": "Admin",
+        "description": " Vincula otras tarjetas de tus colaboradores."
+      },
+      {
+        "name": "Divison de tienda",
+        "description": "Clasifica tus productos y/o servicios por secciones."
+      }
+
+    ]
+  }
+  

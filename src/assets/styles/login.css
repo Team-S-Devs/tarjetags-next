@@ -1,0 +1,149 @@
+.field-container {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1.2rem;
+}
+
+.login-container{
+    border-radius: 25px;
+    max-width: 50%;
+    min-width: 28vw;
+    max-height: 80vh;
+    min-height: 70vh;
+}
+
+.login-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.login-container .subtitle-log {
+    font-size: 1.2rem;
+}
+
+.form-subtitle {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.general-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-secondary-container  {
+    margin-top: 1rem;
+    border-radius: 25px;
+    display: flex;
+}
+
+.link-login{
+    font-size: 10px;
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.pswd-container {
+    margin-block: 1rem;
+    margin-top: 1.5rem;
+}
+
+
+.form-login:nth-last-child(0){
+    background-color: rebeccapurple;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-log-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+.iconButton {
+    margin: auto;
+}
+
+.image-log-container img {
+    max-height: 70vh;
+}
+
+.error {
+    margin-top: 1.5rem;
+    color: red;
+}
+
+.changePswd p {
+    text-decoration: none;
+    outline: none;
+}
+
+
+@media (max-width: 950px) {
+
+    .login-container {
+        max-width: 100vw;
+        padding-left: 5vw;
+    }
+
+    .image-log-container {
+        display: none;
+    }
+
+    .login-secondary-container {
+        min-width: 40vw;
+    }
+
+    .general-background {
+        flex-direction: column;
+    }
+    
+}
+
+
+@media (max-width: 750px) {
+
+
+    .login-secondary-container {
+        min-width: 70vw;
+    }
+    
+}
+
+
+@media (max-width: 500px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .login-container h1 {
+        font-size: 2rem;
+    }
+
+    .login-container p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .login-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .login-container p {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,54 @@
+.portrait-card-img{
+    height: 242px;
+    max-width: 100%;
+    width: 492px;
+    object-fit: cover;
+}
+
+.profile-card-img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 12px;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-top: -100px;
+}
+
+.prodImages-buttons {
+    display: flex;
+    justify-content: center;
+    padding-block: .2rem;
+    margin-bottom: .5rem;
+}
+
+.prodImages-buttons button {
+    font-size: 1.2rem;
+    border:none;
+    background: none;
+    font-weight: 500;
+    border-radius: 10px;
+    padding-inline: .2rem;
+    filter: opacity(60%);
+    cursor: pointer;
+}
+
+.prodImages-buttons :hover {
+    filter: opacity(100%);
+}
+
+@media (max-width: 768px) {
+    .portrait-card-img{
+        height: 142px;
+        width: 300px;
+    }
+}
+
+/* 
+@media (max-width: 400px) {
+    .portrait-card-img{
+        height: 102px;
+        width: 220px;
+    }
+} */
+

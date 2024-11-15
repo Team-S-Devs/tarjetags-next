@@ -1,0 +1,39 @@
+@import url("../global.css");
+
+.button-carousel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-carousel h3{
+    text-align: center;
+}
+
+.text-button-table-compare{
+    display: flex;
+    flex-direction: column
+}
+
+.title-button{
+    font-family: var(--font-family-general);
+    color: black;
+}
+
+.text-container-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 57.843px;
+}
+
+.text-price-table{
+    color: black   ;
+}
+
+
+
+
