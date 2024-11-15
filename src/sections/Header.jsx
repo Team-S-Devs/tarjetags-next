@@ -63,7 +63,7 @@ const Header = () => {
             <div className="logoHeader">
               <Image
                 src={isResponsive ? image : imageFull}
-                alt="tarjetag logo"
+                alt="Tarjetag logo"
                 width={800}
                 height={800}
               />

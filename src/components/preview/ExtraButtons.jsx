@@ -42,6 +42,7 @@ const ExtraButtons = ({ elementsInfo = {}, smallPreview }) => {
                 borderRadius: "50%",
                 objectFit: "cover",
               }}
+              alt={`${button.name} - img`}
             />
           }
         >

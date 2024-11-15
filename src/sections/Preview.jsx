@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { licenseLimits, MAIN_COLOR } from "../utils/constants";
+import { licenseLimits, MAIN_COLOR, SITE_NAME } from "../utils/constants";
 import PhotosHeader from "../components/preview/PhotosHeader";
 import useWindowSize from "../hooks/useWindowsSize";
 import TitleDescription from "../components/preview/TitleDescription";
@@ -102,7 +102,7 @@ const Preview = ({
     >
       <Head>
         <title>{elementsInfo.title}</title>
-        <meta property="og:title" content={elementsInfo.title + "| Tarjetag"} />
+        <meta property="og:title" content={elementsInfo.title + " - " + SITE_NAME} />
         <meta property="og:description" content={elementsInfo.description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tarjetag.com" />

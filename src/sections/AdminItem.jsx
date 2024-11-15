@@ -104,6 +104,7 @@ const AdminItem = ({
               flex: 20,
               maxWidth: 62,
             }}
+            alt={"admin-image"}
           />
 
           <div style={{ flex: 100, textAlign: "left" }}>

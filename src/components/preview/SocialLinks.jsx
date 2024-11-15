@@ -44,6 +44,7 @@ const SocialLinks = ({ elementsInfo = {}, smallPreview }) => {
                     .img
                 }
                 height={smallPreview ? 40 : 60}
+                alt={`${icon.name} - img`}
               />
             </IconButton>
           </Grid>

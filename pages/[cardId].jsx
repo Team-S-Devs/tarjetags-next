@@ -8,9 +8,48 @@ import "../src/assets/styles/loader.css";
 import marca from "../src/assets/images/auth/Marca.svg";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Splash from ".";
 
-const Card = () => {
+export async function getServerSideProps(context) {
+  console.log('getServerSideProps ejecutado');
+  console.log('cardId:', context.params.cardId);
+
+  const { cardId } = context.params;
+  console.log(cardId + "card")
+  let elementsInfo = {
+    title: "Tarjeta",
+    description: "",
+    profilePhoto: { name: "profilePhoto", file: null, url: "" },
+    coverPhoto: { name: "coverPhoto", file: null, url: "" },
+  };
+
+  try {
+    const cardDocRef = doc(db, "cards", cardId);
+    const cardSnapshot = await getDoc(cardDocRef);
+
+    if (cardSnapshot.exists()) {
+      elementsInfo = cardSnapshot.data();
+      elementsInfo.createdAt = "";
+      if (!elementsInfo.profilePhoto) {
+        elementsInfo.profilePhoto = {
+          name: "profilePhoto",
+          file: null,
+          url: "",
+        };
+      }
+      if (!elementsInfo.coverPhoto) {
+        elementsInfo.coverPhoto = { name: "coverPhoto", file: null, url: "" };
+      }
+    } else {
+      return { notFound: true }; // Redirige a 404 si no existe
+    }
+  } catch (error) {
+    return { notFound: true };
+  }
+
+  return { props: { cardData: elementsInfo } };
+}
+
+const Card = ({ cardData }) => {
   const router = useRouter();
   const { cardId } = router.query;
 
@@ -94,13 +133,13 @@ const Card = () => {
   return (
     <div>
       <Head>
-        <title>{`${elementsInfo.title} - ${SITE_NAME}`}</title>
-        <meta name="description" content={elementsInfo.description} />
+        <title>{`${cardData?.title} - ${SITE_NAME}`}</title>
+        <meta name="description" content={cardData?.description} />
         <meta
           property="og:image"
           content={
-            elementsInfo.coverPhoto && elementsInfo.coverPhoto.url !== ""
-              ? elementsInfo.coverPhoto.url
+            cardData?.coverPhoto && cardData?.coverPhoto.url !== ""
+              ? cardData?.coverPhoto.url
               : marca
           }
         />

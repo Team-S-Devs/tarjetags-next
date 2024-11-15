@@ -75,6 +75,7 @@ const ExtraButtons = ({
                   flex: 20,
                   maxWidth: 62,
                 }}
+                alt="Botón extra imagen"
               />
 
               <div style={{ flex: 100, textAlign: "left" }}>
